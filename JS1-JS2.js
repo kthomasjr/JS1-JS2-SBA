@@ -1,14 +1,11 @@
-function totalBasketballScore(freeThrows, midRange, threePointers) {
-  if (
-    typeof freeThrows != isNaN() &&
-    typeof midRange != isNaN() &&
-    typeof threePointers != isNaN()
-  ) {
-    return freeThrows * 1 + midRange * 2 + threePointers * 3;
+ function totalBasketballScore(freeThrows, midRange, threePointers) {
+
+if (isNaN(freeThrows, midRange, threePointers)) {
+   return console.log("all entries must be numbers");
   } else {
-    return console.log("all entries must be numbers");
+    return (freeThrows * 1) + (midRange * 2) + (threePointers * 3);
   }
-};
+}
 
 // totalBasketballScore(2, 3, 4); // should be 20
 
